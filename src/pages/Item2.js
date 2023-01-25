@@ -7,7 +7,7 @@ const Item2 = () => {
           <img className='panda-logo' src='https://www.panda-bank.com/assets/images/logo.svg'/>
 
           <div className='item-title'>
-            Art Piece
+            Art Piece 2
           </div>
 
           <img className='item-img' src='https://media.architecturaldigest.com/photos/60747f8968ffd789bbaac1a3/16:9/w_2560%2Cc_limit/TheNewAbnormal.jpg'/>
@@ -17,8 +17,10 @@ const Item2 = () => {
           <div className='description'>
             <div className='seller-info'>
               <div className='container1'>
-                <img className='profile-pic' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1200px-Default_pfp.svg.png'/>
-                <div>FamousArtist123</div>
+                <div className='smaller-container1'>
+                  <img className='profile-pic' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1200px-Default_pfp.svg.png'/>
+                  <div style={{marginLeft: '1rem'}}>FamousArtist123</div>
+                </div>
               </div>
               <div className='container2'>
                 <div className='verified-section'>
