@@ -284,6 +284,30 @@ input:not(.input-img){
   align-items: center;
 }
 
-.input-img{
+/* .input-img{
   width: 200px
+} */
+
+.preview-img{
+  width: 200px;
+  height: 200px;
+  position: block;
+}
+
+.upload-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.tnc{
+  width: 80%;
+}
+
+.submit-btn{
+  width: 30%;
+  height: 30px;
+  margin-bottom: 20px;
 }
