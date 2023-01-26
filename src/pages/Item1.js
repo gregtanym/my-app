@@ -41,11 +41,11 @@ const Item1 = () => {
       console.log(data)
       const data = await response.json()
       setLoading(false)
-      if('error_message' in data){
-        setError(data['error_message'])
+      if('error' in data){
+        setError(data['error'])
       }
       else{
-        navigate('/success', {state: {transaction_hash: data['transaction_hash']}})
+        navigate('/success', {state: {transaction_hash: data['link']}})
       }
     }
     catch(error){
