@@ -349,9 +349,11 @@ input:not(.input-img){
   border-radius: 10px;
   border:none;
   background-color: #55545b;
+  cursor: pointer;
 }
 
 .success-container{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -360,8 +362,14 @@ input:not(.input-img){
 }
 
 .success-icon{
-  width: 50%;
+  width: 40%;
   height: auto;
+}
+.success-text{
+  font-size: 20px;
+  margin-top: 10px;
+  word-break: break-all;
+  max-width: 80%;
 }
 
 .error-message{

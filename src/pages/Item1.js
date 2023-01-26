@@ -38,14 +38,14 @@ const Item1 = () => {
         "Content-type": "application/json; charset=UTF-8"
       }
       })
-      console.log(data)
       const data = await response.json()
+      console.log("RIGHT HERE: ", data)
       setLoading(false)
       if('error' in data){
-        setError(data['error'])
+        setError(data.error)
       }
       else{
-        navigate('/success', {state: {transaction_hash: data['link']}})
+        navigate('/success', {state: {link: data.link}})
       }
     }
     catch(error){
